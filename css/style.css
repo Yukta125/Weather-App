@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #fafafa;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+}
+
+.container{
+    max-width: 400px;
+}
