@@ -3,7 +3,7 @@ const form = document.querySelector("form");
 const display = document.querySelector(".details");
 const img = document.querySelector("img.time");
 
-const displayWeatherInfo = (data) => {
+export const displayWeatherInfo = (data) => {
   const { cityInfo, weatherInfo } = data;
 
   let html = `
@@ -26,7 +26,7 @@ const displayWeatherInfo = (data) => {
   }
 };
 
-const getInfo = async (cityName) => {
+export const getInfo = async (cityName) => {
   const cityInfo = await getCity(cityName);
   const weatherInfo = await getWeather(cityInfo.Key);
   return { cityInfo, weatherInfo };
